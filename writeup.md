@@ -66,8 +66,8 @@ Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hls_noncar.png "HLS Non Car")
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/yuv_car.png "YUV Car")
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/yuv_noncar.png "YUV Non Car")
-![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/ycrcb_car.png "YCrCb Car")
-![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/ycrcb_noncar.png "YCrCb Non Car")
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/YCrCb_car.png "YCrCb Car")
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/YCrCb_noncar.png "YCrCb Non Car")
 
 
 I also grabbed random images and explored the different HOG channels. I decided to use all three HOG channels, to gain the most feature imformation.
