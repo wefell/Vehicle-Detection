@@ -74,7 +74,7 @@ I also grabbed random images and explored the different HOG channels. I decided 
 
 Here is an example using the `YCrCb` color space and HOG parameters of `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
-![alt text][image2]
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hog_examples.png "Hog Examples")
 
 ####2. Explain how you settled on your final choice of HOG parameters.
 
@@ -187,38 +187,34 @@ fig = plt.figure(figsize=(12, 18), dpi=100)
 visualize(fig, 8, 2, final, heat_titles)
 ```
 
-![alt text][image3]
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 See above for explanation of what I did to optimize my classifier itself. Below are test images comparing the differences in parameter C settings.
 
-![alt text][image4]
+#### Parameter C = 1.0
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/windows_bad.png "Windows Example 1")
+
+#### Paramter C = 1.0e-5
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/windows_good.png "Windows Example 2")
+
 ---
 
 ### Video Implementation
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+
+The below picture is a link to a youtube video of my project output.
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/TrY5JxQbvWA/0.jpg)](https://youtu.be/TrY5JxQbvWA)
 
 
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
 I recorded the positions of positive detections in each frame of the video.  From the positive detections over 15 frames I created a heatmap and then thresholded that map to identify only vehicle positions that appeared in 9 out of the last 15 frames.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
+Here's an example result showing the heatmaps, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid:
 
-### Here are six frames and their corresponding heatmaps:
-
-![alt text][image5]
-
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
-![alt text][image6]
-
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
-![alt text][image7]
-
-
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/bboxes.png "Bounding Boxes Example")
 
 ---
 
