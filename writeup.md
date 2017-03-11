@@ -56,29 +56,17 @@ Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/car.png "Car")
 Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/noncar.png "Non Car")
-RGB Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/rgb_car.png "RGB Car")
-RGB Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/rgb_noncar.png "RGB Non Car")
-HSV Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hsv_car.png "HSV Car")
-HSV Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hsv_noncar.png "HSV Non Car")
-LUV Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/luv_car.png "LUV Car")
-LUV Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/luv_noncar.png "LUV Non Car")
-HLS Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hls_car.png "HLS Car")
-HLS Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/hls_noncar.png "HLS Non Car")
-YUV Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/yuv_car.png "YUV Car")
-YUV Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/yuv_noncar.png "YUV Non Car")
-YCrCb Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/ycrcb_car.png "YCrCb Car")
-YCrCb Non Car
 ![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/ycrcb_noncar.png "YCrCb Non Car")
 
 
