@@ -149,7 +149,7 @@ print('Test Accuracy: ', round(svc.score(X_test, y_test), 4))
 
 ####1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-This code was also taken from the lessons. As with most parameters, I decided on my scales by experimentall reducing the number of false positive and false negatives. More than two scales seemed to be a needless waste of time. One scale of 1.5 works reasonably well, yet two scales of 1.5 an 2.0 seem to be lead to less moments where the cars are not identified.
+This code was also taken from the lessons. As with most parameters, I decided on my scales by experimentally reducing the number of false positive and false negatives. More than two scales seemed to be a needless waste of time. One scale of 1.5 works reasonably well, yet two scales of 1.5 an 2.0 seem to be lead to less moments where the cars are not identified.
 
 ```
 searchpath = 'test_images/*'
