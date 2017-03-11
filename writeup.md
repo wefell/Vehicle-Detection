@@ -13,15 +13,6 @@ The goals / steps of this project are the following:
 * Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
 * Estimate a bounding box for vehicles detected.
 
-[//]: # (Image References)
-[image1]: ./output_images/car_not_car.png
-[image2]: ./output_images/HOG_example.jpg
-[image3]: ./output_images/sliding_windows.jpg
-[image4]: ./output_images/sliding_window.jpg
-[image5]: ./output_images/bboxes_and_heat.png
-[image6]: ./output_images/labels_map.png
-[image7]: ./output_images/output_bboxes.png
-[video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -61,7 +52,7 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block, vis=False, featu
 
 I started by exploring the different color spaces in 3D plots to get an idea for the how the features separate and how consistent the difference is between cars and non-cars. HSV seemed to give the best accuracy at first, but YCrCb, YUV, and LUV interestingly seemed to lead to less false positives. I ended up using YCrCb after a lot of trial and error testing on test images and videos. Non-car images seem to look very similar to other non-car images in the  YCrCb 3D plot, and the same is true of car images compared to other car images. I believe this helps with generalization. HSV does usually provide clear, and sometimes drastic differences between car and non-car images, but patterns between images of the same class can differ quite a bit. I see how HSV could lead to more overfitting compared to YCrCb.
 
-![alt text][image1]
+![alt text](Vehicle-Detection/ouput_images/car.png "Car")
 
 I also grabbed random images and explored the different HOG channels. I decided to use all three HOG channels, to gain the most feature imformation.
 
@@ -184,7 +175,7 @@ visualize(fig, 8, 2, final, heat_titles)
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-See above for explanation of what I did to optimize my classifier itself. Below are test images comparing the differenes in parameter C settings.
+See above for explanation of what I did to optimize my classifier itself. Below are test images comparing the differences in parameter C settings.
 
 ![alt text][image4]
 ---
