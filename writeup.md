@@ -52,7 +52,7 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block, vis=False, featu
 
 I started by exploring the different color spaces in 3D plots to get an idea for the how the features separate and how consistent the difference is between cars and non-cars. HSV seemed to give the best accuracy at first, but YCrCb, YUV, and LUV interestingly seemed to lead to less false positives. I ended up using YCrCb after a lot of trial and error testing on test images and videos. Non-car images seem to look very similar to other non-car images in the  YCrCb 3D plot, and the same is true of car images compared to other car images. I believe this helps with generalization. HSV does usually provide clear, and sometimes drastic differences between car and non-car images, but patterns between images of the same class can differ quite a bit. I see how HSV could lead to more overfitting compared to YCrCb.
 
-![alt text](Vehicle-Detection/ouput_images/car.png "Car")
+![alt text](https://github.com/wefell/Vehicle-Detection/blob/master/ouput_images/car.png "Car")
 
 I also grabbed random images and explored the different HOG channels. I decided to use all three HOG channels, to gain the most feature imformation.
 
